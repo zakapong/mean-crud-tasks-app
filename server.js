@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var tasks = require('./routes/tasks');
 
-var port= 3000 ;
+var port= 3000 || process.env.PORT;
 
 var app = express();
 
@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 //Set Static Folder
-app.use(express.static(path.join(__dirname, '/client')));
+app.use(express.static(path.join(__dirname, 'client')));
 
 
 // Body parser middlewaer
