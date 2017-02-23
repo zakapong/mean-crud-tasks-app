@@ -34,7 +34,7 @@ deleteTask(id){
   this.taskService.deleteTask(id).subscribe(data =>{
     if(data.n==1){
       for (var i=0; i<tasks.length; i++){
-        if(tasks[i]._id==id){
+        if(tasks[i]._id == id){
           tasks.splice(i,1);
         }
       }
@@ -43,7 +43,7 @@ deleteTask(id){
 
 
 }
-updteStatus(task){
+updateStatus(task){
   var _task={
     _id:task._id,
     title: task.title,
@@ -51,7 +51,7 @@ updteStatus(task){
   };
   this.taskService.updateStatus(_task).subscribe(data =>{
     task.isDone= !task.isDone;
-  })
+  });
 }
 
 

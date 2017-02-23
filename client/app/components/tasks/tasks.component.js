@@ -45,7 +45,7 @@ var TasksComponent = (function () {
             }
         });
     };
-    TasksComponent.prototype.updteStatus = function (task) {
+    TasksComponent.prototype.updateStatus = function (task) {
         var _task = {
             _id: task._id,
             title: task.title,
