@@ -1,1 +1,1 @@
-A MEAN task app with CRUD capablities.
+A MEAN stack app with CRUD capablities.
