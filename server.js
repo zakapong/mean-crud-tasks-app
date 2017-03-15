@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var tasks = require('./routes/tasks');
 
-var port= process.env.PORT;
+var port= 3000 || process.env.PORT;
 
 var app = express();
 
